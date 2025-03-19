@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3주차 과제</title>
+    <style>
+        .list1{
+            list-style-type: lower-roman;
+        }
+        .table{
+            width: 60%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .th, td {
+            border: 1px solid red;
+            padding: 3px;
+            text-align: center;
+        }
+
+        .th {
+            background-color: #f8f8f8;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .title1{font-size: 22px;
+            font-weight: bold;
+            color: red;
+            text-shadow: 2px 2px 3px black;
+        }
+        .title2 {
+            font-size: 22px;
+            font-weight: bold;
+            color: black;
+            text-shadow: 2px -3px 5px green;
+        }
+        fieldset {
+            width: 700px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .buttons {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 8px 15px;
+            border: 1px solid black;
+            background-color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="title1">3차시 과제</h2>
+    <ui class="list1">
+    <li>
+        <a href="https://google.com" target="_blank">google.com 방문</a>
+    </li>
+    <p> target 속성이 "_blank"이므로, 링크는 새로운 탭에서 열립니다.</p>
+
+    <li>
+        <a href="https://google.com" target="_self">google.com 방문</a>
+    </li>
+    <p> target 속성이 "_self"이므로, 링크는 해당 창에서 열립니다</p>
+</ui>
+
+
+    <hr>
+        <table>
+            <tr>
+                <th>mon</th>
+                <th>tue</th>
+                <th>wed</th>
+                <th>thu</th>
+                <th>fri</th>
+            </tr>
+
+            <tr>
+                <td>c programming</td>
+                <td>web programming</td>
+                <td>mobile programming</td>
+                <td>java programming</td>
+                <td rowspan="3">휴강</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">점심시간</td>
+            </tr>
+
+            <tr>
+                <td>c programming</td>
+                <td>web programming</td>
+                <td>mobile programming</td>
+                <td>java programming</td>
+            </tr>
+        </table>
+        <h3>
+            시간표
+        </h3>
+    <hr>
+    <h2 class="title2">회원 가입을 환영합니다</h2>
+
+    <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+            <li>
+                <b>아이디</b> <input type="text" placeholder="4자 ~ 10자 사이, 공백 없이">
+            </li>
+            <li>
+                <b>이메일</b> <input type="email">
+            </li>
+            <li>
+                <b>비밀번호</b> <input type="password" placeholder="문자와 숫자, 특수 기호 포함">
+            </li>
+            <li>
+                <b>비밀번호 확인</b> <input type="password">
+            </li>
+            <li>
+                <b>가입 경로</b>
+                <select>
+                    <option>블로그</option>
+                    <option>SNS</option>
+                    <option>지인 추천</option>
+                    <option>기타</option>
+                </select>
+            </li>
+            <li>
+                <b>메모</b>
+                <textarea rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <div class="radio-group">
+            <label><input type="radio" name="mailing" checked> 메일 수신</label>
+            <label><input type="radio" name="mailing"> 메일 수신 안 함</label>
+        </div>
+    </fieldset>
+
+    <div class="buttons">
+        <button type="submit">가입하기</button>
+        <button type="reset">취소</button>
+    </div>
+
+</body>
+</html>
