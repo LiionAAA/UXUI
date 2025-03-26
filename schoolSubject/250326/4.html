@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            text-align: center;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            padding: 20px;
+        }
+        ul li {
+            display: inline;
+            text-transform: uppercase;
+            padding: 0 10px;
+            letter-spacing: 5px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border-bottom: 1px solid green;
+            width: 100px;
+        }
+        th{
+            background-color: green;
+            color: white;
+            height: 30px;
+        }
+        td{
+            text-align: center;
+            padding: 8px;
+        }
+        tr:nth-child(2n) {
+            background-color: rgb(168, 255, 109);
+        }
+        tr:hover {
+            background-color: rgb(139, 177, 109);
+        }
+        input[type=text]:hover {
+            background-color: rgb(255, 202, 202);
+        }
+        input[type=text]:focus {
+            font-size: 1.2em;
+        }
+        input[type=submit] {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+        }
+        input[type=text], textarea {
+            width: 300px;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border: 2px solid blue;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        4주차 과제입니다.
+    </h1>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <table>
+        <thead>
+            <tr><th>학번</th> <th>이름</th> <th>성적</th> <th>학점</th></tr>
+        </thead>
+        <tbody>
+            <tr> <td>1</td> <td>Bill</td> <td>98</td> <td>A+</td></tr>
+            <tr> <td>2</td> <td>Steve</td> <td>89</td> <td>B+</td></tr>
+            <tr> <td>3</td> <td>Larry</td> <td>93</td> <td>A-</td></tr>
+            <tr> <td>1</td> <td>Bill</td> <td>98</td> <td>A+</td></tr>
+            <tr> <td>2</td> <td>Steve</td> <td>89</td> <td>B+</td></tr>
+            <tr> <td>3</td> <td>Larry</td> <td>93</td> <td>A-</td></tr>
+            <tr> <td>1</td> <td>Bill</td> <td>98</td> <td>A+</td></tr>
+            <tr> <td>2</td> <td>Steve</td> <td>89</td> <td>B+</td></tr>
+            <tr> <td>3</td> <td>Larry</td> <td>93</td> <td>A-</td></tr>
+            <tr> <td>1</td> <td>Bill</td> <td>98</td> <td>A+</td></tr>
+            <tr> <td>2</td> <td>Steve</td> <td>89</td> <td>B+</td></tr>
+            <tr> <td>3</td> <td>Larry</td> <td>93</td> <td>A-</td></tr>
+        </tbody>
+    </table>
+    <h2>상품 평</h2>
+        <p>받으신 상품을 평가해주세요.</p>
+        <div>
+        <form action="process.jsp">
+        <label for="name">이름</label><br>
+        <input type="text" id="name" name="name" placeholder="이름"><br>
+        <label for="email">이메일</label><br>
+        <input type="text" id="email" name="email" placeholder="이메일"><br>
+        <label for="subject">상품 평</label><br>
+        <textarea id="subject" name="subject" placeholder="상품을 평가해주세요."
+        style="height:100px"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+        </div>
+        </body>
+        </html>
+</body>
+</html>
