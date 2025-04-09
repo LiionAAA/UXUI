@@ -1,0 +1,38 @@
+.container{
+    width: 700px;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+        "box1 box1 box1"
+        "box2 box3 box3"
+        "box2 box4 box5";
+    gap: 1rem;
+}
+.box{
+    color:#fff;
+}
+.box1 {
+    background-color:#3689ff;
+    grid-area: box1;
+    text-align: center;
+}
+.box2 {
+    background-color:#00cf12;
+    grid-area: box2;
+    text-align: center;
+}
+.box3 {
+    background-color:#ff9019;
+    grid-area: box3;
+    text-align: center;
+}
+.box4 {
+    background-color:#ffd000;
+    grid-area: box4;
+    text-align: center;
+}
+.box5 {
+    background-color:#ff3f3f;
+    grid-area: box5;
+    text-align: center;
+}
